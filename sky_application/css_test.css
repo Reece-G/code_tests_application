@@ -1,0 +1,23 @@
+/* Write CSS directly, don't wrap your solution in <style> tag */
+.dark-theme {
+    --primary-color: red;
+    --secondary-color: green;
+    background-color: #000;
+    background-color: var(--primary-color);
+    color: #fff;
+    color: var(--secondary-color);
+}
+
+li:nth-child(3n) {
+    --primary-color: black;
+    --secondary-color: blue;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+p {
+    --font-size: 15px;
+    --min-font-size: 5px;
+    --max-font-size: 20px;
+    font-size: clamp(var(--min-font-size), var(--font-size), var(--max-font-size));
+}
